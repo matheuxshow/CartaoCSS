@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Visitas Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #333333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            color: #fff;
+            overflow: hidden;
+        }
+
+       
+        .cartao {
+            width: 80%;
+            max-width: 600px;
+            height: 80%;
+            max-height: 800px;
+            background-color: #2e2e2e;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cartao:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+        }
+
+       
+        .foto-perfil {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #444;
+            margin-bottom: 30px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .foto-perfil:hover {
+            transform: scale(1.1);
+        }
+
+        
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #f1f1f1;
+            margin-bottom: 10px;
+        }
+
+        .trabalho {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #aaa;
+            margin-bottom: 35px;
+        }
+
+        
+        .informacoes {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .informacoes p {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #bbb;
+        }
+
+        .informacoes a {
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: #00bfae;
+            display: block;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .informacoes a:hover {
+            color: #009e91;
+            transform: translateX(5px);
+        }
+
+        
+        .redes-sociais {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .redes-sociais a {
+            font-size: 2.2rem;
+            color: #bbb;
+            margin: 0 20px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .redes-sociais a:hover {
+            color: #00bfae;
+            transform: translateY(-5px);
+        }
+
+       
+        footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 1rem;
+            color: #bbb;
+        }
+
+    </style>
+</head>
+<body>
+
+<main class="cartao">
+   
+    <img src="img/IMG_20241212_105057_951.webp" alt="Foto de José Matheus" class="foto-perfil">
+
+   
+    <h1>José Matheus</h1>
+    <p class="trabalho">Designer Gráfico</p>
+
+    
+    <section class="informacoes">
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5585985044740" target="_blank">+55 (85) 98504-4740</a></p>
+        <p><strong>E-mail:</strong> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=soares.matheus09@aluno.ifce.edu.br">soares.matheus09@aluno.ifce.edu.br</a></p>
+    </section>
+
+    
+    <aside class="redes-sociais">
+        <a href="https://www.instagram.com/josematheusbsb/" target="_blank" aria-label="LinkedIn">
+            🔗
+        </a>
+        <a href="https://github.com/matheuxshow" target="_blank" aria-label="GitHub">
+            🖥️
+        </a>
+        <a href="https://wa.me/5585985044740" target="_blank" aria-label="WhatsApp">
+            📲
+        </a>
+    </aside>
+
+    
+    <footer>
+        <p>Cartão de Visitas - Todos os direitos reservados ©</p>
+    </footer>
+
+</main>
+
+</body>
+</html>
